@@ -1,19 +1,17 @@
-# .npmrc
+# 【level-1】3d粒子场景
 
-```
-registry=https://registry.npm.taobao.org/
-```
+## 1. threejs 基本要素
 
-# postcss
+## 2. 模型加载
 
-autoprefixer 插件 需要配置 browserlist
+## 3. 动画交互
 
-cssno 压缩
+## 4. 任务
 
-# MiniCssExtractPlugin
+1. 将粒子的过渡动效变得更自然
 
-分离 css 为单独文件
+   提示：现在的粒子是一起运动的，如何将其变成各自运动
 
-# loader
+2. 添加环境粒子
 
-本质上是一个 function 定义的函数，因为要通过 this 访问 webpack 提供的 loader.runner
+   提示：和变换粒子相似，区别在于环境粒子不参与粒子变换
