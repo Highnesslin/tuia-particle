@@ -1,0 +1,112 @@
+html,
+body,
+#view {
+  width: 100%;
+  height: 100%;
+}
+#view {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#view::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(transparent 10%, rgba(0, 0, 0, 0.4) 50%);
+}
+#pureFullPage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+#pureFullPage .nav {
+  left: 50px;
+}
+#pureFullPage .nav .nav-dot {
+  position: relative;
+  width: 18px;
+  height: 20px;
+  padding: 0 14px;
+  margin: 28px 0;
+  cursor: pointer;
+}
+
+#pureFullPage .nav .nav-dot.active::after {
+  /* opacity: 1; */
+  color: #fff;
+}
+
+#pureFullPage .nav .nav-dot::after {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  color: gray;
+  /* opacity: 0;
+  transition: opacity 200ms; */
+}
+
+#pureFullPage .nav .nav-dot:nth-child(1)::after {
+  content: 'GAME';
+}
+
+#pureFullPage .nav .nav-dot:nth-child(2)::after {
+  content: 'SHARE';
+}
+
+#pureFullPage .nav .nav-dot:nth-child(3)::after {
+  content: 'READING';
+}
+
+#pureFullPage .nav .nav-dot:nth-child(4)::after {
+  content: 'MOVIE';
+}
+
+#pureFullPage .nav .nav-dot:nth-child(5)::after {
+  content: 'KV';
+}
+
+#pureFullPage .nav .nav-dot:nth-child(6)::after {
+  content: 'QR';
+}
+
+#pureFullPage .nav .nav-dot.active span {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  background: transparent;
+}
+#pureFullPage .nav p:hover span {
+  width: 0;
+  height: 0;
+  background-color: #fff;
+  cursor: pointer;
+}
+#pureFullPage .nav .nav-dot span {
+  width: 0;
+  height: 0;
+  border-radius: 20px;
+  /* margin-right: 10px; */
+  display: block;
+  margin: 0 auto;
+  border: 3px solid #fff;
+}
+
+.page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  user-select: none;
+  /* pointer-events: none; */
+}
+/* .nav {
+  pointer-events: visible;
+} */
